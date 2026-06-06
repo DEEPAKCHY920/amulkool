@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amul Kool Rose - Feel the Splash</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Experience the refreshing taste of Amul Kool Rose flavored milk. Scroll to dive into the rich, creamy splash of natural rose goodness.">
+  <meta name="keywords" content="Amul, Amul Kool, Rose Milk, Flavored Milk, Scroll Animation, Creamy Milk, Refreshment">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Preloader Overlay -->
+  <div id="preloader" class="preloader-overlay">
+    <div class="preloader-content">
+      <div class="logo-spinner-wrapper">
+        <div class="ripple-ring"></div>
+        <div class="ripple-ring secondary"></div>
+        <span class="preloader-logo">Amul</span>
+      </div>
+      <h2 class="preloader-title">Preloading the Splash...</h2>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+      <p id="progress-text" class="progress-text">0% Loaded</p>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <span class="logo-brand">Amul</span>
+        <span class="logo-product">KOOL</span>
+        <span class="logo-flavor">Rose</span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#animation-trigger" class="nav-link">The Experience</a>
+        <a href="#features" class="nav-link">Details</a>
+      </nav>
+      <div class="header-cta">
+        <a href="#buy" class="btn btn-primary btn-sm">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Smooth Scroll Container -->
+  <main id="scroll-container">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span class="gradient-text">Silky. Creamy.</span><br>
+          <span class="highlight-text">Absolutely Kool.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Indulge in the refreshing goodness of real rose flavored milk, crafted to perfection.
+        </p>
+        <div class="hero-buttons">
+          <a href="#animation-trigger" class="btn btn-primary">Scroll to Splash</a>
+          <a href="#features" class="btn btn-secondary">Discover Secrets</a>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span class="scroll-indicator-text">Scroll Down</span>
+        <div class="scroll-indicator-mouse">
+          <div class="scroll-indicator-wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll animation container (Pinned section) -->
+    <section id="animation-trigger" class="animation-section-container">
+      <!-- Pinned Wrapper -->
+      <div class="animation-pinned-wrapper">
+        
+        <!-- Canvas for drawing frames -->
+        <canvas id="animation-canvas"></canvas>
+        
+        <!-- Overlay Panel containing fading copy cards -->
+        <div class="scroll-copy-container">
+          
+          <div class="copy-card" id="card-1">
+            <span class="card-tag">Texture</span>
+            <h3 class="card-title">A Splash of Creaminess</h3>
+            <p class="card-desc">
+              Velvety milk sourced from the finest dairies, swirled into a perfect consistency for maximum refreshment.
+            </p>
+          </div>
+
+          <div class="copy-card" id="card-2">
+            <span class="card-tag">Aroma</span>
+            <h3 class="card-title">Infused with Elegant Rose</h3>
+            <p class="card-desc">
+              Sweet, fragrant rose essence blends harmoniously with fresh cold milk, triggering an instant burst of cooling satisfaction.
+            </p>
+          </div>
+
+          <div class="copy-card" id="card-3">
+            <span class="card-tag">The Reveal</span>
+            <h3 class="card-title">Amul Kool Rose</h3>
+            <p class="card-desc">
+              The ultimate pocket-sized refreshment is here. Sealed fresh, served cold, and ready to re-energize your senses anytime, anywhere.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Features / Ingredient Grid Section -->
+    <section id="features" class="features-section">
+      <div class="section-header">
+        <span class="section-tag">Pure Goodness</span>
+        <h2 class="section-title">What Makes It So Kool?</h2>
+        <p class="section-subtitle">A balanced fusion of nutrition and sweet refreshing taste.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Pure Toned Milk</h3>
+          <p class="feature-desc">Rich in essential calcium, protein, and vitamins to give you a clean, healthy energy boost.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Authentic Rose Syrup</h3>
+          <p class="feature-desc">Blended with premium rose extract, imparting a nostalgic cooling aroma and naturally sweet profile.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Sealed for Freshness</h3>
+          <p class="feature-desc">Packaged in lightweight, durable PET bottles using state-of-the-art aseptic filling technology.</p>
+        </div>
+      </div>
+
+      <div class="cta-banner">
+        <div class="cta-glow"></div>
+        <div class="cta-inner">
+          <div class="cta-text">
+            <h3>Ready for the Ultimate Chill?</h3>
+            <p>Grab your Amul Kool Rose at the nearest store or order online today.</p>
+          </div>
+          <div class="cta-action">
+            <a href="#" class="btn btn-primary shadow-glow">Order Instantly</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="logo-brand">Amul</span>
+            <span class="logo-product">KOOL</span>
+          </div>
+          <p class="footer-desc">The taste of India's favorite refreshing milk drinks.</p>
+        </div>
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Products</h4>
+            <a href="#">Amul Kool Koko</a>
+            <a href="#">Amul Kool Cafe</a>
+            <a href="#">Amul Kool Rose</a>
+          </div>
+          <div class="link-group">
+            <h4>Follow Us</h4>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+            <a href="#">Facebook</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Amul Dairy. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Scroll Animation Script -->
+  <script src="main.js"></script>
+</body>
+</html>
